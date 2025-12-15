@@ -1,0 +1,10 @@
+ru/fedorenko/EncodingFilter.class
+org/example/Main.class
+ru/fedorenko/UserServlet.class
+ru/fedorenko/FirstHttpServlet.class
+ru/fedorenko/persist/User.class
+ru/fedorenko/persist/UserRepository.class
+ru/fedorenko/CalcServlet.class
+ru/fedorenko/BootStrapListener.class
+ru/fedorenko/FirstServlet.class
+ru/fedorenko/SecondServlet.class
