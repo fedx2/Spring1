@@ -40,7 +40,7 @@
                     <url>http://localhost:8080/manager/text</url>
                     <username>admin</username>
                     <password>admin</password>
-                    <path>/servlet-api</path>
+                    <path>/servlet-app</path>
                 </configuration>
             </plugin>
         </plugins>
