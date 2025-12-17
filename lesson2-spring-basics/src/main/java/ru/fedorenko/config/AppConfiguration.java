@@ -1,7 +1,13 @@
 package ru.fedorenko.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+import ru.fedorenko.Cart;
+import ru.fedorenko.UserService;
+import ru.fedorenko.persist.UserRepository;
+import ru.fedorenko.persist.UserRepositoryImpl;
 
 @Configuration
 @ComponentScan("ru.fedorenko")
