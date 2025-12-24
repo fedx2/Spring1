@@ -20,4 +20,10 @@
         <module>lesson2-spring-basics</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+        </dependency></dependencies>
 </project>
