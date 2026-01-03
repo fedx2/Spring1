@@ -12,11 +12,21 @@
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
+        <spring.version>7.0.2</spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <modules>
         <module>lesson1-servlet-api</module>
+        <module>lesson2-spring-basics</module>
+        <module>lesson3-spring-mvc</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+        </dependency>
+    </dependencies>
 </project>
