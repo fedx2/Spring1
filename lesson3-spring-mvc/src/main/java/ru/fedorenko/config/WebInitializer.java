@@ -3,9 +3,9 @@ package ru.fedorenko.config;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-import jakarta.servlet.Filter;
 import ru.fedorenko.AppConfig;
+
+import javax.servlet.Filter;
 
 public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
