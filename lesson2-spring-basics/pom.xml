@@ -11,10 +11,6 @@
 
     <artifactId>lesson2-spring-basics</artifactId>
 
-    <properties>
-    <spring.version>7.0.2</spring.version>
-    </properties>
-
     <dependencies>
     <dependency>
         <groupId>org.springframework</groupId>
