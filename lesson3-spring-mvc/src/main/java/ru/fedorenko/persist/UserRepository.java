@@ -3,7 +3,7 @@ package ru.fedorenko.persist;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -26,13 +26,9 @@ public class UserRepository {
         this.insert(new User("User 5"));
     }
 
-    public List<User> findAll() {
-        return new ArrayList<>(userMap.values());
-    }
+    public List<User> findAll() { return new ArrayList<>(userMap.values()); }
 
-    public User findById(long id) {
-        return userMap.get(id);
-    }
+    public User findById(long id) { return userMap.get(id); }
 
     public void insert(User user) {
         long id = identity.incrementAndGet();
@@ -40,8 +36,12 @@ public class UserRepository {
         userMap.put(id, user);
     }
 
-    public void update(User user) {
+    public User save(User user) {
+        if(user.getId() == null) {
+            user.setId(identity.incrementAndGet());
+        }
         userMap.put(user.getId(), user);
+        return user;
     }
 
     public void delete(long id) {
