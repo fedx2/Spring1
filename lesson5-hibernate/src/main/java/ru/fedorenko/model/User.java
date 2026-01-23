@@ -9,6 +9,11 @@ import lombok.*;
 @NoArgsConstructor
 @Table(name = "users")
 @ToString
+@NamedQueries({
+        @NamedQuery(name = "findAllUsers", query = "Select u from User u")
+        @NamedQuery(name = "countAllUsers", query = "Select count(u) from User u")
+        @NamedQuery(name = "deleteUserById", query = "Delete from User where u.id = :id")
+})
 public class User {
 
     @Id
