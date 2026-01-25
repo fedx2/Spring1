@@ -1,4 +1,4 @@
-package homework;
+package ru.fedorenko.homework;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
