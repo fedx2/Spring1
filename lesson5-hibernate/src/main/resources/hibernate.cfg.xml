@@ -19,6 +19,8 @@
         <mapping class="ru.fedorenko.model.Contact"/>
         <mapping class="ru.fedorenko.model.Customer"/>
         <mapping class="ru.fedorenko.model.Role"/>
+        <mapping class="ru.fedorenko.model.LineItem"/>
+        <mapping class="ru.fedorenko.model.Product"/>
 
     </session-factory>
 </hibernate-configuration>

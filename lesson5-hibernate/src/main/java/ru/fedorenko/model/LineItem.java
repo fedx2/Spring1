@@ -1,27 +1,32 @@
 package ru.fedorenko.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
 @Entity
-@Table(name = "customers")
 @NoArgsConstructor
-public class Customer {
+@Table(name = "line_items")
+public class LineItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    private User user;
+    @ManyToOne
+    private Product product;
 
-    @OneToMany(mappedBy = "customer")
-    private List<LineItem> products;
+    @ManyToOne
+    private Customer customer;
+
+    private Long quantity;
+
+    private String color;
+
+    private String size;
 
 }
