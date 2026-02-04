@@ -1,22 +1,21 @@
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.cfg.Configuration;
-import ru.fedorenko.model.User;
 
 public static void main(String[] args) {
-    EntityManagerFactory entityManagerFactory = new Configuration()
-            .configure("hibernate.cfg.xml")
-            .buildSessionFactory();
-
-            EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-        // INSERT
-//            entityManager.getTransaction().begin();
+//    EntityManagerFactory entityManagerFactory = new Configuration()
+//            .configure("hibernate.cfg.xml")
+//            .buildSessionFactory();
 //
-//            entityManager.persist(new User("User1", "1@a.com", "pass1"));
-//            entityManager.persist(new User("User2", "2@a.com", "pass2"));
-//            entityManager.persist(new User("User3", "3@a.com", "pass3"));
-//            entityManager.getTransaction().commit();
+//            EntityManager entityManager = entityManagerFactory.createEntityManager();
+//
+//        // INSERT
+////            entityManager.getTransaction().begin();
+////
+////            entityManager.persist(new User("User1", "1@a.com", "pass1"));
+////            entityManager.persist(new User("User2", "2@a.com", "pass2"));
+////            entityManager.persist(new User("User3", "3@a.com", "pass3"));
+////            entityManager.getTransaction().commit();
 
         // SELECT
 /*
@@ -54,10 +53,10 @@ public static void main(String[] args) {
 //    User user = entityManager.find(User.class, 3L);
 //    entityManager.remove(user);
 //    entityManager.getTransaction().commit();
-
-entityManager.createNativeQuery("select u.id\n" +
-        "from users u\n" +
-        "where u.username like '%brain'", String.class).getSingleResult();
-    entityManager.close();
-    entityManagerFactory.close();
+//
+//entityManager.createNativeQuery("select u.id\n" +
+//        "from users u\n" +
+//        "where u.username like '%brain'", String.class).getSingleResult();
+//    entityManager.close();
+//    entityManagerFactory.close();
 }
